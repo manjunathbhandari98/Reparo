@@ -17,7 +17,7 @@ const LandingPage = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mt-4 justify-center lg:justify-start [&>*]:cursor-pointer">
-          <div className="bg-orange-600 hover:bg-orange-700 flex gap-3 items-center justify-center transition-colors duration-300 rounded-xl
+          <div className="bg-orange-500 hover:bg-orange-700 flex gap-3 items-center justify-center transition-colors duration-300 rounded-xl
            font-semibold text-lg text-white px-6 py-3 shadow-md shadow-orange-200">
             <h2>Book Now</h2>
             <ArrowRight/>

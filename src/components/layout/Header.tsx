@@ -1,14 +1,31 @@
+import { useState } from "react";
+import Login from "../../pages/Login";
+import Signup from "../../pages/Signup";
 import type { navs } from "../../types";
 import ReparoLogo from "../logo/Logo";
 
 const Header = () =>{
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSignup, setIsSignup] = useState(false);
+
     const navOptions: navs[] = [
         {id:1, name: 'Home', link:'/'},
-        {id:2, name: 'Dashboard', link:'/'},
-        {id:3, name: 'How it works', link:'/'},
-        {id:4, name: 'Support', link:'/'},
+        {id:2, name: 'Dashboard', link:'/dashboard'},
+        {id:3, name: 'How it works', link:'/how-it-works'},
+        {id:4, name: 'Support', link:'/support'},
 
     ]
+
+    const toggleSignup = () =>{
+      setIsLoginOpen(false);
+      setIsSignup(true);
+    }
+
+    const toggleLogin = () =>{
+      setIsSignup(false);
+      setIsLoginOpen(true);
+    }
+
     return(
        <div className="hidden sm:flex p-5 justify-between items-center mx-5 bg-white shadow">
   <ReparoLogo />
@@ -20,13 +37,25 @@ const Header = () =>{
     ))}
   </div>
   <div className="flex gap-4">
-    <button className="text-gray-700 hover:text-orange-500 cursor-pointer 
+    <button
+    onClick={toggleLogin}
+    className="text-gray-700 hover:text-orange-500 cursor-pointer 
       px-6 py-1.5 rounded font-semibold">Login</button>
-    <button className="bg-orange-500 hover:bg-orange-600 text-gray-100 px-6 
+    <button
+    onClick={toggleSignup}
+    className="bg-orange-500 hover:bg-orange-600 text-gray-100 px-6 
       py-1.5 cursor-pointer rounded font-semibold">Sign up</button>
   </div>
-</div>
 
+  {isLoginOpen && (
+    <Login onClose={() => setIsLoginOpen(false)} onSignup={toggleSignup} />
+  )}
+
+  {isSignup && (
+    <Signup onClose={() => setIsSignup(false)} onLogin={toggleLogin}/>
+  )}
+
+  </div>
     )
 }
 
