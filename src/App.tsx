@@ -1,13 +1,27 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/layout/Header'
+import Sidebar from './components/layout/Sidebar'
+import Home from './pages/Home'
 
 function App() {
- return (
- <div className="gap-1">
-  <Header/>
- </div>
- )
+  return (
+    <div className="gap-1">
+      {/* Desktop Header */}
+      <Header />
+
+      {/* Mobile Sidebar Header */}
+      <div className="sm:hidden">
+        <Sidebar />
+      </div>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </div>
+  )
 }
+
 
 export default App
