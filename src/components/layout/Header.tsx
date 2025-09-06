@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Login from "../../pages/Login";
 import Signup from "../../pages/Signup";
 import type { navs } from "../../types";
@@ -31,9 +32,9 @@ const Header = () =>{
   <ReparoLogo />
   <div className="flex gap-10 text-gray-700 font-semibold">
     {navOptions.map((item: navs) => (
-      <div key={item.id} className="hover:text-orange-500 cursor-pointer">
+      <Link to={item.link} key={item.id} className="hover:text-orange-500 cursor-pointer">
         {item.name}
-      </div>
+      </Link>
     ))}
   </div>
   <div className="flex gap-4">
