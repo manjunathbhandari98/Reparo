@@ -1,7 +1,7 @@
 export const history = [
   {
     service: 'Oil Change',
-    vehicle: 'Car',
+    vehicle: 'car',
     provider: 'QuickFix Motors',
     date: 'Jan 15, 2025',
     price: 2300,
@@ -9,7 +9,7 @@ export const history = [
   },
   {
     service: 'Brake Pad Replacement',
-    vehicle: 'Bike',
+    vehicle: 'motorcycle',
     provider: 'Sharma Auto Works',
     date: 'Feb 2, 2025',
     price: 1200,
@@ -17,7 +17,7 @@ export const history = [
   },
   {
     service: 'Battery Check & Replacement',
-    vehicle: 'Car',
+    vehicle: 'camper-van',
     provider: "Ravi's Auto Care",
     date: 'Mar 10, 2025',
     price: 4500,
@@ -25,7 +25,7 @@ export const history = [
   },
   {
     service: 'Clutch Repair',
-    vehicle: 'Car',
+    vehicle: 'car',
     provider: 'Karan Motors',
     date: 'Apr 22, 2025',
     price: 3800,
@@ -33,15 +33,15 @@ export const history = [
   },
   {
     service: 'AC Service',
-    vehicle: 'Car',
-    provider: 'Verma Car Clinic',
+    vehicle: 'car',
+    provider: 'Verma car Clinic',
     date: 'May 5, 2025',
     price: 2500,
     status: 'Completed',
   },
   {
     service: 'Tyre Replacement',
-    vehicle: 'Bike',
+    vehicle: 'motorcycle',
     provider: 'Shetty Auto Works',
     date: 'Jun 18, 2025',
     price: 3200,
@@ -49,7 +49,7 @@ export const history = [
   },
   {
     service: 'General Service',
-    vehicle: 'Tempo',
+    vehicle: 'auto',
     provider: 'Patel Auto Hub',
     date: 'Jul 30, 2025',
     price: 2000,

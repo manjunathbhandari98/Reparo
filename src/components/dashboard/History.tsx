@@ -15,7 +15,7 @@ const History = () => {
             <div className="flex gap-4 items-center">
               <div className="bg-green-100 rounded-full flex items-center justify-center w-14 h-14">
                 <img
-                  src="/car.png"
+                  src={`/${item.vehicle}.png`}
                   alt="vehicle"
                   className="w-8 h-8 object-contain"
                 />
