@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/layout/Footer'
 import Header from './components/layout/Header'
+import NotificationPage from './components/layout/NotificationPage'
 import Sidebar from './components/layout/Sidebar'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
@@ -25,6 +26,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/how-it-works' element={<HowItWorksPage />} />
         <Route path='/support' element={<Support />} />
+        <Route path='/notifications' element={<NotificationPage />} />
       </Routes>
 
       <Footer/>
