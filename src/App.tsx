@@ -7,6 +7,7 @@ import Sidebar from './components/layout/Sidebar'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import HowItWorksPage from './pages/HowItWorks'
+import Support from './pages/Support'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/how-it-works' element={<HowItWorksPage />} />
+        <Route path='/support' element={<Support />} />
       </Routes>
 
       <Footer/>
