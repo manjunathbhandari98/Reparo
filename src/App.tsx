@@ -6,6 +6,7 @@ import Header from './components/layout/Header'
 import Sidebar from './components/layout/Sidebar'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
+import HowItWorksPage from './pages/HowItWorks'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/how-it-works' element={<HowItWorksPage />} />
       </Routes>
 
       <Footer/>

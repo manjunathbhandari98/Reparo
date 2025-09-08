@@ -1,3 +1,5 @@
+import type { ReactElement } from 'react';
+
 export type navs = {
   id: number;
   name: string;
@@ -14,3 +16,17 @@ export type reviews = {
     city: string;
   };
 };
+
+export interface ServiceStep {
+  id: number;
+  title: string;
+  description: string;
+  points: string[];
+}
+
+export interface ReasonsToChoose {
+  id: number;
+  title: string;
+  icon: ReactElement;
+  desc: string;
+}
